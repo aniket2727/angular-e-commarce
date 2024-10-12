@@ -1,0 +1,21 @@
+
+
+<div>
+    <h1>Register Page</h1>
+    <form (submit)="onRegister()">
+      <div>
+        <label for="username">Enter Username</label>
+        <input id="username" [(ngModel)]="username" type="text" required />
+      </div>
+      <div>
+        <label for="useremail">Enter Email</label>
+        <input id="useremail" [(ngModel)]="useremail" type="email" required />
+      </div>
+      <div>
+        <label for="userpassword">Enter Password</label>
+        <input id="userpassword" [(ngModel)]="userpassword" type="password" required />
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
