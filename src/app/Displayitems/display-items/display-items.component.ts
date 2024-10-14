@@ -22,7 +22,7 @@ export class DisplayItemsComponent {
 
 
   fetchItems() {
-    this.http.get<any[]>('https://api.example.com/items')  // Replace with your actual API URL
+    this.http.get<any[]>('https://fakestoreapi.com/products/')  // Replace with your actual API URL
       .subscribe(
         (response) => {
           this.items = response;  // Assign fetched data to items array
